@@ -1,11 +1,9 @@
 //Osvaldo Tirado-Cortes
 //I2C transmits light information from onboard sensor
+
 #include <msp430fr6989.h>
 #include <stdlib.h>
 #include <stdint.h>
-
-
-
 
 void Initialize_UART(void);
 void uart_write_char(unsigned char);
@@ -22,8 +20,6 @@ void uart_write_string(char * str);
 #define TXBUFFER    UCA1TXBUF  // Transmit buffer
 #define RXBUFFER    UCA1RXBUF  // Receive buffer
 #define redLED      BIT0
-
-
 
 int main(void)
 {
